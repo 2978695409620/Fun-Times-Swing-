@@ -35,16 +35,19 @@ public class GUI extends JFrame implements WindowListener{
 		p1 = new JTextArea();
 		p1.setPreferredSize(new Dimension(250, 300));
 		p1.setEditable(false);
+		p1.setFont(new Font("Serif", Font.PLAIN, 12));
 		add(p1);
 		
 		log = new JTextArea();
 		log.setPreferredSize(new Dimension(450, 200));
 		log.setEditable(false);
+		log.setFont(new Font("Serif", Font.PLAIN, 12));
 		add(log);
 		
 		p2 = new JTextArea();
 		p2.setPreferredSize(new Dimension(250, 300));
 		p2.setEditable(false);
+		p2.setFont(new Font("Serif", Font.PLAIN, 12));
 		add(p2);
 		
 		next = new JButton("Start!");
@@ -58,7 +61,7 @@ public class GUI extends JFrame implements WindowListener{
 		});
 		
 		setTitle("FunTimes");
-		setSize(1000,400);
+		setSize(new Dimension(1000, 400));
 		setVisible(true);
 		setResizable(false);
 		addWindowListener(this);
