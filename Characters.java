@@ -63,6 +63,11 @@ public class Characters {
 		this.hp = hp;
 	}
 	
+	public void setMana(int mana)
+	{
+		this.mana = mana;
+	}
+	
 	public void die()
 	{
 		alive = false;

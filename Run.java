@@ -74,6 +74,7 @@ public class Run {
 		{
 			if (!states.isWaiting())
 			{
+				
 				game.updateP1(getPlayerStats(p1) + getPlayerSkills(p1));
 				game.updateP2(getPlayerStats(p2) + getPlayerSkills(p2));
 				
@@ -85,6 +86,7 @@ public class Run {
 						game.addNext();
 						states.setSuccess(false);
 						states.setWaiting(true);
+						p1.setMana(p1.getMana() + p1.getManaRegen());
 					}
 					else
 					{
@@ -103,6 +105,7 @@ public class Run {
 						game.addNext();
 						states.setSuccess(false);
 						states.setWaiting(true);
+						p2.setMana(p2.getMana() + p2.getManaRegen());
 					}
 					else
 					{
